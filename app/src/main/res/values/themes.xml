@@ -7,4 +7,10 @@
         <item name="colorAccent">@color/teal_200</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.TeleBirr.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TeleBirr.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.TeleBirr.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

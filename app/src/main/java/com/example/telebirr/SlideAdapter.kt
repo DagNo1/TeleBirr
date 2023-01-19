@@ -36,11 +36,11 @@ class SlideAdapter(private var images: List<Int>, private var header: List<Strin
     override fun onBindViewHolder(holder: SlideAdapter.Pager2ViewHolder, position: Int) {
         holder.itemImage.setImageResource(images[position])
         holder.itemHeader.text = header[position]
-        if(position == 1){
-            holder.itemHeader.setTextSize(TypedValue.COMPLEX_UNIT_SP, 35F);
-        } else {
-            holder.itemHeader.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40F);
-        }
+//        if(position == 1){
+//            holder.itemHeader.setTextSize(TypedValue.COMPLEX_UNIT_SP, 35F)
+//        } else {
+//            holder.itemHeader.setTextSize(TypedValue.COMPLEX_UNIT_SP, 40F)
+//        }
 //        holder.itemText.text = Resources.getSystem().getString(R.string.placeHolder)
     }
 }

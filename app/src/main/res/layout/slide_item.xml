@@ -36,7 +36,8 @@
             android:gravity="center"
             android:text="@string/placeHolderMain"
             android:textColor="@color/on_boarding_blue"
-            android:textSize="40sp" />
+            android:textSize="35sp"
+            />
 
         <TextView
             android:id="@+id/on_boarding_body_text"

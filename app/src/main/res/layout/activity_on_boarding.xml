@@ -7,25 +7,60 @@
     tools:context=".OnBoarding">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_marginHorizontal="40sp"
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
         android:layout_height="550dp"
+        android:layout_marginHorizontal="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <me.relex.circleindicator.CircleIndicator3
-        app:ci_width = "8sp"
-        app:ci_height= "8sp"
-        app:ci_margin="8sp"
-        app:ci_drawable="@drawable/circular_indicator_color"
-        app:ci_drawable_unselected="@drawable/circular_indicator_color_unselected"
         android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="30sp"
+        android:layout_marginTop="32dp"
+        app:ci_drawable="@drawable/circular_indicator_color"
+        app:ci_drawable_unselected="@drawable/circular_indicator_color_unselected"
+        app:ci_height="8sp"
+        app:ci_margin="8sp"
+        app:ci_width="8sp"
         app:layout_constraintTop_toBottomOf="@id/viewPager2"
-        />
+        tools:layout_editor_absoluteX="0dp" />
 
+    <TextView
+        android:id="@+id/ob_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="30sp"
+        android:text="Register"
+        android:textColor="@color/on_boarding_blue"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ob_login_button"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/ob_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_blue_btn"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="30sp"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/indicator"
+        app:layout_constraintVertical_bias="0.472" />
 </androidx.constraintlayout.widget.ConstraintLayout>

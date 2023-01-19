@@ -9,17 +9,20 @@ import android.os.Handler
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val sharedPreferences = getSharedPreferences("LoadUp", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        setContentView(R.layout.activity_splash_screen)
-        editor.apply {
-            putBoolean("first_time",false);
-            apply()
+        if (supportActionBar != null) {
+            supportActionBar?.hide()
         }
+        setContentView(R.layout.activity_splash_screen)
+        val sharedPreferences = getSharedPreferences("LoadUp", Context.MODE_PRIVATE)
         Handler().postDelayed({
-            val intent = Intent(this, OnBoarding::class.java)
-            startActivity(intent)
+            if (sharedPreferences.getBoolean("first_time",true)){
+                val onBoarding = Intent(this,OnBoarding::class.java)
+                startActivity(onBoarding)
+            } else {
+                val mainActivity = Intent(this, OnBoarding::class.java)
+                startActivity(mainActivity)
+            }
             finish()
-        }, 4000)
+        }, 2000)
     }
 }
