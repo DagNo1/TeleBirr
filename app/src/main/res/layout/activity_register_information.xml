@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white2"
+    tools:context=".RegisterInformation">
+
+    <TextView
+        android:id="@+id/textView1_in_ca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Create your account"
+        android:textColor="@color/on_boarding_dark_gray"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/textView2_in_ca"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="12dp"
+        android:text="@string/placeHolder_small"
+        android:textAlignment="center"
+        android:textColor="@color/on_boarding_indicator_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1_in_ca" />
+
+    <LinearLayout
+        android:id="@+id/layout_first_name_input_in_ca"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2_in_ca">
+
+        <TextView
+            android:id="@+id/textView3_in_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="First Name*"
+            android:textColor="@color/on_boarding_dark_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/first_name_input_in_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/input_field"
+            android:elevation="5sp"
+            android:hint="Enter First Name"
+            android:paddingHorizontal="20sp"
+            android:paddingVertical="10sp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_middle_name_input_in_ca"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_first_name_input_in_ca"
+        app:layout_constraintVertical_bias="0.044">
+        <TextView
+            android:id="@+id/textView4_in_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Middle Name*"
+            android:textColor="@color/on_boarding_dark_gray"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/middle_name_input_in_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/input_field"
+            android:elevation="5sp"
+            android:hint="Enter Middle Name"
+            android:paddingHorizontal="20sp"
+            android:paddingVertical="10sp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_last_name_input_in_ca"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_middle_name_input_in_ca"
+        app:layout_constraintVertical_bias="0.044">
+        <TextView
+            android:id="@+id/textView5_in_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Last Name*"
+            android:textColor="@color/on_boarding_dark_gray"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/last_name_input_in_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/input_field"
+            android:elevation="5sp"
+            android:hint="Enter Last Name"
+            android:paddingHorizontal="20sp"
+            android:paddingVertical="10sp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_gender_input_in_ca"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_last_name_input_in_ca"
+        app:layout_constraintVertical_bias="0.044">
+        <TextView
+            android:id="@+id/textView6_in_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Gender*"
+            android:textColor="@color/on_boarding_dark_gray"
+            android:textSize="18sp" />
+        <RadioGroup
+            android:id="@+id/radioGroup_in_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioButton_male_in_ca"
+                style="@style/CustomCheckbox02"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:fontFamily="@font/inter"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="10sp"
+                android:text="Male"
+                android:textSize="16sp" />
+            <RadioButton
+                android:id="@+id/radioButton_female_in_ca"
+                style="@style/CustomCheckbox02"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:fontFamily="@font/inter"
+                android:paddingHorizontal="8sp"
+                android:paddingVertical="10sp"
+                android:text="Female"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_password_input_in_ca"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_gender_input_in_ca"
+        app:layout_constraintVertical_bias="0.044">
+        <TextView
+            android:id="@+id/textView7_in_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Password*"
+            android:textColor="@color/on_boarding_dark_gray"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/password_input_in_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/input_field"
+            android:elevation="5sp"
+            android:hint="Your Password"
+            android:paddingHorizontal="20sp"
+            android:paddingVertical="10sp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_c_password_input_in_ca"
+        android:layout_width="370sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_password_input_in_ca"
+        app:layout_constraintVertical_bias="0.044">
+        <TextView
+            android:id="@+id/textView8_in_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Confirm password*"
+            android:textColor="@color/on_boarding_dark_gray"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/c_password_input_in_ca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/input_field"
+            android:elevation="5sp"
+            android:hint="Confirm password"
+            android:paddingHorizontal="20sp"
+            android:paddingVertical="10sp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/su_ca_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/rounded_blue_btn"
+        android:enabled="false"
+        android:fontFamily="@font/inter_medium"
+        android:paddingHorizontal="40sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_c_password_input_in_ca"
+        app:layout_constraintVertical_bias="0.205" />
+</androidx.constraintlayout.widget.ConstraintLayout>

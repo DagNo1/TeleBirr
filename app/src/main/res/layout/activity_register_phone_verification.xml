@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/white2"
-    tools:context=".MainActivity">
+    tools:context=".RegisterPhoneVerification">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_in_pv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_semibold"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.109" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2_in_pv"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50sp"
@@ -33,7 +33,7 @@
         android:textColor="@color/on_boarding_indicator_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_in_pv" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -45,7 +45,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/textView2_in_pv">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -68,14 +68,15 @@
             android:src="@drawable/signup_vertical_line" />
 
         <EditText
-            android:id="@+id/phone_number_input"
+            android:id="@+id/phone_number_input_in_pv"
             android:layout_width="255dp"
             android:layout_height="wrap_content"
             android:background="@null"
             android:hint="123-456-789"
             android:inputType="number"
             android:padding="10sp"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:maxLength="9"/>
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -136,7 +137,7 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/rounded_blue_btn"
         android:fontFamily="@font/inter_medium"
-        android:paddingHorizontal="30sp"
+        android:paddingHorizontal="40sp"
         android:enabled="false"
         android:text="Next"
         android:textAllCaps="false"

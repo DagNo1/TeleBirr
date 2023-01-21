@@ -25,7 +25,7 @@ class RegisterPhoneVerification : AppCompatActivity() {
         findViewById<TextView>(R.id.signup_terms).setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ethiotelecom.et/telebirr/")))
         }
-        val phone_number = findViewById<EditText>(R.id.phone_number_input)
+        val phone_number = findViewById<EditText>(R.id.phone_number_input_in_pv)
         val agreed = findViewById<CheckBox>(R.id.term_agreement)
         val next = findViewById<Button>(R.id.su_pn_next_button)
         phone_number.addTextChangedListener(object : TextWatcher {
