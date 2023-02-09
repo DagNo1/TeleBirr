@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/white2"
-    tools:context=".CreateAccount">
-
+    tools:context=".CreateAccount"
+    android:layout_margin="10sp">
     <TextView
         android:id="@+id/textView1_in_ca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_semibold"
-        android:text="Create your account"
+        android:text="@string/create_your_account"
         android:textColor="@color/on_boarding_dark_gray"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
         android:id="@+id/layout_first_name_input_in_ca"
         android:layout_width="370sp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="10sp"
         android:orientation="vertical"
         android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,22 +51,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="First Name*"
+            android:text="@string/first_name"
             android:textColor="@color/on_boarding_dark_gray"
             android:textSize="18sp" />
         <EditText
             android:id="@+id/first_name_input_in_ca"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0sp"
             android:layout_marginTop="10sp"
             android:layout_weight="1"
             android:background="@drawable/input_field"
             android:elevation="5sp"
-            android:hint="Enter First Name"
+            android:hint="@string/enter_first_name"
             android:paddingHorizontal="20sp"
             android:paddingVertical="10sp"
             android:textSize="16sp"
-            />
+            android:importantForAutofill="no"
+            android:inputType="text" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/layout_middle_name_input_in_ca"
@@ -85,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="Middle Name*"
+            android:text="@string/middle_name"
             android:textColor="@color/on_boarding_dark_gray"
             android:textSize="18sp" />
         <EditText
@@ -96,10 +97,12 @@
             android:layout_weight="1"
             android:background="@drawable/input_field"
             android:elevation="5sp"
-            android:hint="Enter Middle Name"
+            android:hint="@string/enter_middle_name"
             android:paddingHorizontal="20sp"
             android:paddingVertical="10sp"
             android:textSize="16sp"
+            android:importantForAutofill="no"
+            android:inputType="text"
             />
     </LinearLayout>
     <LinearLayout
@@ -119,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="Last Name*"
+            android:text="@string/last_name"
             android:textColor="@color/on_boarding_dark_gray"
             android:textSize="18sp" />
         <EditText
@@ -130,10 +133,12 @@
             android:layout_weight="1"
             android:background="@drawable/input_field"
             android:elevation="5sp"
-            android:hint="Enter Last Name"
+            android:hint="@string/enter_last_name"
             android:paddingHorizontal="20sp"
             android:paddingVertical="10sp"
             android:textSize="16sp"
+            android:importantForAutofill="no"
+            android:inputType="text"
             />
     </LinearLayout>
     <LinearLayout
@@ -153,7 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="Gender*"
+            android:text="@string/gender"
             android:textColor="@color/on_boarding_dark_gray"
             android:textSize="18sp" />
         <RadioGroup
@@ -171,7 +176,7 @@
                 android:fontFamily="@font/inter"
                 android:paddingHorizontal="8sp"
                 android:paddingVertical="10sp"
-                android:text="Male"
+                android:text="@string/male"
                 android:textSize="16sp" />
             <RadioButton
                 android:id="@+id/radioButton_female_in_ca"
@@ -183,7 +188,7 @@
                 android:fontFamily="@font/inter"
                 android:paddingHorizontal="8sp"
                 android:paddingVertical="10sp"
-                android:text="Female"
+                android:text="@string/female"
                 android:textSize="16sp" />
         </RadioGroup>
     </LinearLayout>
@@ -204,7 +209,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="Password*"
+            android:text="@string/password_s"
             android:textColor="@color/on_boarding_dark_gray"
             android:textSize="18sp" />
         <EditText
@@ -215,11 +220,12 @@
             android:layout_weight="1"
             android:background="@drawable/input_field"
             android:elevation="5sp"
-            android:hint="Your Password"
+            android:hint="@string/your_password"
             android:paddingHorizontal="20sp"
+            android:inputType="textPassword"
             android:paddingVertical="10sp"
             android:textSize="16sp"
-            />
+            android:importantForAutofill="no" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/layout_c_password_input_in_ca"
@@ -238,7 +244,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_semibold"
-            android:text="Confirm password*"
+            android:text="@string/confirm_password_s"
             android:textColor="@color/on_boarding_dark_gray"
             android:textSize="18sp" />
         <EditText
@@ -249,29 +255,31 @@
             android:layout_weight="1"
             android:background="@drawable/input_field"
             android:elevation="5sp"
-            android:hint="Confirm password"
+            android:hint="@string/confirm_password"
             android:paddingHorizontal="20sp"
+            android:inputType="textPassword"
             android:paddingVertical="10sp"
             android:textSize="16sp"
-            />
+            android:importantForAutofill="no" />
     </LinearLayout>
 
     <Button
         android:id="@+id/su_ca_next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="15sp"
         android:background="@drawable/rounded_blue_btn"
         android:enabled="false"
         android:fontFamily="@font/inter_medium"
         android:paddingHorizontal="40sp"
-        android:text="Next"
+        android:text="@string/next"
         android:textAllCaps="false"
         android:textColor="@color/white2"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout_c_password_input_in_ca" />
+        app:layout_constraintTop_toBottomOf="@+id/layout_c_password_input_in_ca"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
